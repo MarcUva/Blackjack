@@ -1,6 +1,6 @@
 # Blackjack
 
-https://github.com/MarcUva/Blackjack
+http://marcuva.github.io/Blackjack/
 
 BLACKJACK
 
