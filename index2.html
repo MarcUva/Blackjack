@@ -1,0 +1,50 @@
+<html>
+<head><script type="text/javascript" src="jquery-1.12.0.js"></script>
+      <link rel="stylesheet" href="style2.css"></link>
+    
+
+      <meta charset="UTF-8"></meta> 
+    <meta name="description" content="Barebones game of Blackjack"></meta>
+    <title>BlackJack</title>
+  
+ </head>
+<body>  
+ <section class="playingCards" > 
+        <section class="playingArea">
+            <h1>House</h1>
+            <div id="dealer">
+                <div class="sect-total">
+                    House Total: <span class="total"></span>
+                </div>
+            </div>
+        </div>
+         </section>
+        <section class="playingArea">
+            <h1>Player</h1>
+            <ul class "playingCards deck">
+            <ul class="buttons">
+                <li><button id="hit">Hit</button></li>
+                <li><button id="stand">Stand</button></li>
+                <li><button id="bet">Bet</button>
+                    :  <input type="number" id="gamebet"><li> 
+                <li><button id="play-again">Play Again?</button></li>
+            </ul>
+            <div id="player">
+                <div class="sect-total">
+                    Player Total: <span class="total"></span><br>
+                    Player Bankroll: $ <span class="playerbankroll"></span>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="game-results">
+    <script src="suits2.js"></script>
+    <script src="card2.js"></script>
+    <script src="player2.js"></script>
+    <script src="deck2.js"></script>
+    <script src="blackjack2.js"></script>
+    </section>
+  </body>
+</html>
+
+ 

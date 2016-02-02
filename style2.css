@@ -1,0 +1,202 @@
+
+body {
+    background: lightgreen;
+    padding: .5em 1em;
+    font-family: cursive, sans-serif;
+}
+
+h1 {
+    font-size: 2.0em;
+    text-indent: 12px
+    color: grey;
+    text-decoration: underline;
+    margin-left: 2em;
+}
+
+h1:last-of-type, .buttons {
+    display: inline;
+}
+
+.playingArea { 
+
+    border-style: inset;
+    border-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-color: grey;
+border-radius: 50px 50px 50px 50px;
+border-radius: 50px 50px 50px 50px;
+border-radius: 50px 50px 50px 50px;
+
+
+}
+
+div#dealer{
+    padding-left:40px; /*compensate for the player UL spacing */
+}
+
+
+.buttons {
+    list-style: none;
+    padding-right: 20px;
+    padding-left:20px;
+
+}
+.bet input { text-align: center;  ;
+width : 20px;
+}
+
+form {
+    margin-left:20px;
+}
+ 
+
+.buttons li {
+    display: inline;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+.buttons li button {
+    padding: 5px 10px;
+    width: 6em;
+}
+
+#play-again {
+    display: none;
+    width: 10em;
+    padding: 3px;
+    color: black;
+}
+
+#game-results {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    font-size:25px;
+    padding: 1em;
+    background: lightgrey;
+    color: black;
+    font-weight: 900;
+}
+
+.sect-total {
+    margin: 10px 0;
+}
+
+
+.playingCards .card {
+    display: inline-block;
+    width: 3.3em;
+    height: 4.6em;
+    border: 2px solid #666;
+    border-radius: .3em;
+    padding: .25em;
+    margin: 0 .5em .5em 0;
+    text-align: center;
+    font-size: 2.5em; 
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-color: white;
+}
+
+.playingCards a.card {
+    text-decoration: none;
+}
+ 
+
+.playingCards .card.back {
+    text-indent: -4000px;
+    background-color: #darkgrey;
+    background-repeat: repeat;
+    background-image: url("https://pbs.twimg.com/profile_images/3370026511/25ba07fa709439aec6aad92ba60df968.jpeg"); /* image is "Pattern 069" from http://www.squidfingers.com/patterns/ */
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+    
+
+/* suitsOPEN SOURCE CSS
+********************************************************************/
+
+
+
+
+/*editing cards more specifically:*/
+
+.playingCards .card .rank,
+.playingCards .card .suit {
+    display: block;
+    line-height: 1;
+    text-align: left;
+}
+.playingCards .card .rank {
+}
+.playingCards .card .suit {
+    line-height: .7;
+}
+
+/* checkbox */
+.playingCards .card input {
+    margin-top: -.05em;
+    font: inherit;
+}
+.playingCards.simpleCards .card input,
+.playingCards .card.rank-j input,
+.playingCards .card.rank-q input,
+.playingCards .card.rank-k input,
+.playingCards .card.rank-a input {
+    margin-top: 2.4em;
+}
+.playingCards.inText .card input {
+    margin-top: 0;
+}
+
+
+
+/* joker (top left symbol) */
+.playingCards .card.joker .rank {
+    position: absolute;
+}
+
+.playingCards .card.joker .suit {
+    text-indent: -9999px;
+}
+
+/* inner multiple suits */
+.playingCards .card .suit:after {
+    display: block;
+    margin-top: -.8em;
+    text-align: center;
+    white-space: pre;
+    line-height: .9;
+    font-size: 1.3em;
+    word-spacing: -.05em;
+}
+
+/*Make heart + club symbosl fit better */
+.playingCards .card.hearts .suit:after {
+    word-spacing: -.15em;
+}
+.playingCards .card.hearts.rank-10 .suit:after {
+    word-spacing: -.05em;
+    letter-spacing: -.1em;
+}
+.playingCards .card.clubs.rank-10 .suit:after {
+    word-spacing: -.15em;
+}
+
+/* 8, 9, 10 are the most crowded */
+.playingCards .card.rank-8 .suit:after,
+.playingCards .card.rank-9 .suit:after {
+    letter-spacing: -.075em;
+}
+.playingCards .card.rank-10 .suit:after {
+    letter-spacing: -.1em;
+}
+.playingCards .card.clubs .suit:after {
+    letter-spacing: -.125em;
+}
+
