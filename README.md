@@ -4,19 +4,19 @@ https://github.com/MarcUva/Blackjack
 
 BLACKJACK
 
-Description
+Description:
 Barebones Blackjack App
 
 
-Tech used / Stack
+Tech used / Stack:
 *JQuery
 *CSS
 
 
-Features
+Features:
 *basic blackjack game rules(comparison of deck totals, busts, pushes, wins)
 *CSS styling of cards
 
-Future Implementations
+Future Implementations:
 *functional Betting system
 *Split/Double 
